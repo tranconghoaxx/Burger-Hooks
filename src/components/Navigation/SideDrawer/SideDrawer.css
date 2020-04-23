@@ -1,0 +1,40 @@
+.SideDrawer{
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* hien duoi modal tren toolbar 
+    tren backdrop hinh nen an  */
+    z-index: 200;
+    background-color: white;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    /* Transition hoạt động bằng cách thay đổi giá trị thuộc tính một cách trơn tru từ giá trị này sang giá trị khác
+     trong khoảng thời gian nhất định. thuong dung voi hover de thay doi gia tri cho dan ra */
+
+     /* Transform trong CSS là những thuộc tính dùng để "biến hình" cho các phần tử ban đầu,
+      cho phép chúng ta thay đổi vị trị, hình dáng hay xoay phần tử theo các chiều.
+      Có 2 kiểu thường gặp là 2D and 3D transformation.
+    */
+
+    /* Kết hợp Transition với Transform */
+    transition: transform 0.3s ease-out;
+}
+/* chieu rong toi thieu co the nhin thay */
+@media (min-width: 500px){
+    .SideDrawer{
+        display: none;
+    }
+}
+.Open{
+    transform: translateX(0);
+}
+.Close{
+    transform: translateX(-100%);
+}
+.Logo{
+    height: 11%;
+    margin-bottom: 32px;
+}

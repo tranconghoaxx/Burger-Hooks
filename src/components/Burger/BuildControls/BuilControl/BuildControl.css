@@ -1,0 +1,77 @@
+.BuildControl{
+    display: flex;
+    /* sử dụng thuộc tính justify-content để điều chỉnh vị trí bắt đầu và căn chỉnh các item bên trong container theo dọc theo trục main axis(truc chinh) */
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.BuildControl button {
+    display: block;
+    /* inherit: Kế thừa từ thành phần cha. */
+    font:inherit;
+    padding: 5px;
+    margin: 0 5px;
+    width: 80px;
+    border:1px solid red;
+    cursor: pointer;
+    /*  Một outline là một đường kẻ bao quanh các phần tử (bên ngoài đường viền) để tạo phần tử “nổi bật”. */
+    outline: none;
+
+}
+
+.BuildControl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.BuildControl button {
+    display: block;
+    font: inherit;
+    padding: 5px;
+    margin: 0 5px;
+    width: 80px;
+    border: 1px solid red;
+    cursor: pointer;
+    outline: none;
+}
+
+.BuildControl button:disabled {
+    background-color: greenyellow;
+    border: 1px solid #7E7365;
+    color: white;
+    cursor: default;
+}
+
+.BuildControl button:hover:disabled {
+    background-color: yellowgreen;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Label {
+    padding: 10px;
+    font-weight: bold;
+    width: 80px;
+}
+
+.BuildControl .Less {  
+    background-color: red;
+    color: white;
+}
+
+.BuildControl .More {
+    background-color: red;
+    color: white;
+}
+
+.BuildControl .Less:hover, .BuildControl .Less:active {  
+    background-color: #DAA972;
+    color: white;
+}
+
+.BuildControl .More:hover,.BuildControl .More:active {
+    background-color: #99703F;
+    color: white;
+}

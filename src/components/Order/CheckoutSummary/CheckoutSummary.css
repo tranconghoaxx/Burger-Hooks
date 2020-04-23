@@ -1,0 +1,11 @@
+.CheckoutSummary{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+/* chặn dưới có nghĩa là từ dưới 600px sẽ khong hiện thị mà hiển thị từ 600px trở lên định nghĩa trong này */
+/* @media (min-width:600px){
+    .CheckoutSummary{
+        width: 500px;
+    }
+} */

@@ -1,0 +1,34 @@
+.Burger{
+    width: 100%;
+    margin:auto;
+    height: 250px;
+    /* Thuộc tính overflow xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung. */
+
+    /* scroll
+    _ Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi và xuất hiện thanh scroll, khi cuộn sẽ hiển thị text.
+    _ Khi sử dụng thành phần này sẽ xuất hiện cả thanh scroll ngang và dọc.
+     */
+    overflow: scroll;
+    text-align: center;
+    font-weight:bold;
+    /* rem: là đơn vị tham chiếu tỷ lệ so với phần tử gốc của website ở đây là thẻ <html> dựa vào giá trị của thuộc tính font-size */
+    font-size:1.2rem;
+}
+@media (min-width: 500px) and (min-height: 400px){
+    .Burger{
+        width: 350px;
+        height:300px;
+    }
+}
+@media (min-width: 500px) and (min-height: 401px){
+    .Burger{
+        width: 450px;
+        height:400px;
+    }
+}
+@media (min-width: 1000px) and (min-height: 700px){
+    .Burger{
+        width: 700px;
+        height:600px;
+    }
+}

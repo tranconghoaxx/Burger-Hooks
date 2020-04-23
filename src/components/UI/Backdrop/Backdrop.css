@@ -1,0 +1,21 @@
+/* phong nen cua ingredients */
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    /* fixed: adj co dinh,bat bien */
+    /* An element with position: fixed; is positioned relative to the viewport, 
+    which means it always stays in the same place even if the page is scrolled: */
+    position: fixed;
+    /* The z-index property specifies the stack(ngan xep) order(n: thu tu) of an element. */
+    /* An element with greater stack order is always in front of an element with a lower stack order. */
+    /* xep chong len nhau vi du chu noi len tren hinh anh */
+    z-index: 100;
+    left: 0 !important; 
+    top: 0 !important;
+    /*  background-color: rgba(n1, n2, n3, độ trong suốt);
+    Với n1, n2, n3 có giá trị từ 0 tới 255, tương ứng với màu đen tới trắng.
+    Độ trong suốt: có giá trị từ 0 tới 1 (với 1 là không trong suốt).
+    rgba(red,green,blue,opacity)
+    0,0,0 la den het */
+    background-color: rgba(0, 0, 0, 0.5);
+}

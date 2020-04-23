@@ -1,0 +1,35 @@
+/* thanh cong cu navigation cho desktop */
+.Toolbar{
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #703B09;
+    display: flex;
+    /* mặc định, các item bên trong sẽ bắt đầu từ main start đến main end, tuy nhiên,
+     đôi khi container vẫn còn khoảng trống. Vì vậy, bạn có thể sử dụng
+      thuộc tính justify-content để điều chỉnh vị trí bắt đầu và căn chỉnh các item bên trong container theo dọc theo trục main axis,
+     chiều ngang hoặc chiều dọc tùy thuộc vào flex-direction. */
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+    /* content-box và border-box : content box thi cong them padding va border cho tp phin to ra:
+     con border box thi cong vao nhu thu nho lai cho vua  voi pt*/
+    box-sizing: border-box;
+    z-index: 90;
+    color: white;
+}
+
+.Toolbar nav{
+    height: 100%;
+}
+.Logo{
+    height: 80%;
+}
+/* chieu rong toi da de hieu thi */
+@media (max-width: 499px){
+    .DesktopOnly{
+        display: none;
+    }
+}
