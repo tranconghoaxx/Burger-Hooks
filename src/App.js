@@ -21,7 +21,7 @@ const asyncAuth = asyncComponent(() => {
   return import('./containers/Auth/Auth');
 });
 
-const app = props => {
+const App = props => {
   useEffect(() => {
     props.onTryAutoSignup();
   },[]);
@@ -66,5 +66,5 @@ export default withRouter(
   connect(
     mapStateToProps,
     mapDispatchToProps
-  )(app)
+  )(App)
 );
